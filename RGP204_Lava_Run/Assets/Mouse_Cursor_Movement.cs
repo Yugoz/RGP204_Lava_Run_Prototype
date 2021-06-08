@@ -20,7 +20,7 @@ public class Mouse_Cursor_Movement : MonoBehaviour {
         //{
             mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             direction = (mousePosition - transform.position).normalized;
-            rb.velocity = new Vector2(direction.x * moveSpeed, direction.y * moveSpeed);
+            rb.velocity = new Vector3(direction.x * moveSpeed, direction.y * moveSpeed);
         //}
         //else {
             //rb.velocity = Vector2.zero;
