@@ -16,7 +16,7 @@ public class Lava_Movement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Boost"))
         {
-            speed += 0.5f;
+            speed += 0.35f;
         }
 
     }
